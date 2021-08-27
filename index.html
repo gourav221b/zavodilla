@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    
+    <!-- Imporant meta information to make the page as rigid as possible on mobiles, to avoid unintentional zooming on the page itself  -->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zavodila | Portfolio in 3d</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+</head>
+<style>
+.about
+{
+    background: #111;
+}
+
+
+</style>
+<div class="main">
+       
+    <div class="bar">
+        <div class="logo left">
+            <img src="logo.png" alt="zavodila logo">
+        </div>
+        <div class="page"  id="aboutClick">About</div> 
+      
+        <div class="brand">zavodila</div>
+    </div>
+    <div id="scene"></div> 
+    <div class="bar bottombar">
+        <div class="social left">
+            <a>facebook</a><a>twitter</a>
+        </div>
+        <div class="page" id="workClick">Works</div> 
+        
+        <div class="contact"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
+    </div>
+</div>
+
+
+ <div class="about divBig" id="about">
+    <div class="bar">
+        <div class="logo left">
+            <img src="logo.png" alt="zavodila logo" style="filter: invert();">
+        </div>
+        <div class="page" style="visibility: hidden;" >About</div> 
+      
+        <div class="brand">zavodila</div>
+    </div>
+    <div class="content aboutContent">
+        <div class="title">About Me</div>
+        <div class="row flexDiv ">
+        <div class="para col-md-5">
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab quae exercitationem incidunt quia dolore explicabo omnis voluptatem corrupti molestiae, sit commodi. Beatae alias illum dolorem deserunt quae esse sapiente recusandae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ducimus quae illo vel aut vero, minus soluta quaerat aliquam ullam earum similique repudiandae saepe asperiores debitis. Nihil fugit eaque, non nemo quo eum quaerat! Tempora eum impedit optio sapiente rerum maxime, excepturi consequatur at, sint ea sit ad fuga recusandae!</p>
+        </div>
+        <div class="aboutimg col-md-5">
+            <img src="aboutimg.svg" alt="">
+        </div>
+    </div>
+    </div>
+    <div class="bar bottombar">
+        <div class="social left">
+            <a>facebook</a><a>twitter</a>
+        </div>
+        <div class="page closebtn" id="closeaboutClick">Close</div> 
+        
+        <div class="contact"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
+    </div>
+</div>
+
+<div class="works divBig" id="works">
+    <div class="bar">
+        <div class="logo left">
+            <img src="logo.png" alt="zavodila logo">
+        </div>
+        <div class="page"  style="visibility: hidden;">Work</div> 
+      
+        <div class="brand">zavodila</div>
+    </div>
+    <div class="content">
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('products')"> Products</button>
+            <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+            <button class="btn" onclick="filterSelection('people')"> Photography</button>
+          </div>
+          <div class="row">
+            <div class="column products col-md-4 col-xs-10">
+              <div class="imagecontent">
+                <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Mountains" style="width:100%">
+                <h4>Shoes</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            <div class="column products col-md-4 col-xs-10">
+              <div class="imagecontent">
+              <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Lights" style="width:100%">
+                <h4>Shades</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            <div class="column products col-md-4 col-xs-10">
+              <div class="imagecontent">
+              <img src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="products" style="width:100%">
+                <h4>Car</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            
+            <div class="column cars col-md-4 col-xs-10">
+              <div class="imagecontent">
+                <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Car" style="width:100%">
+                <h4>Heels</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            <div class="column cars col-md-4 col-xs-10">
+              <div class="imagecontent">
+              <img src="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Car" style="width:100%">
+                <h4>Snacks</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            <div class="column cars col-md-4 col-xs-10">
+              <div class="imagecontent">
+              <img src="https://images.unsplash.com/photo-1572635196243-4dd75fbdbd7f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Car" style="width:100%">
+                <h4>Deodrant</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+          
+            <div class="column people col-md-4 col-xs-10">
+              <div class="imagecontent">
+                <img src="https://images.unsplash.com/photo-1531525645387-7f14be1bdbbd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Car" style="width:100%">
+                <h4>GameBoy</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            <div class="column people col-md-4 col-xs-10">
+              <div class="imagecontent">
+              <img src="https://images.unsplash.com/photo-1572635196184-84e35138cf62?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Car" style="width:100%">
+                <h4>Car</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            <div class="column people col-md-4 col-xs-10">
+              <div class="imagecontent">
+              <img src="https://images.unsplash.com/photo-1549326483-d8ecdf9611c9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Car" style="width:100%">
+                <h4>Skateboard</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+          <!-- END GRID -->
+          </div>
+    </div>
+    <div class="bar bottombar">
+        <div class="social left">
+            <a>facebook</a><a>twitter</a>
+        </div>
+        <div class="page closebtn" id="closeworkClick">Close</div> 
+        
+        <div class="contact"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+  <!-- The main three.js file -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js'></script>
+
+<!-- This brings in the ability to load custom 3D objects in the .gltf file format. Blender allows the ability to export to this format out the box -->
+<script src='https://cdn.jsdelivr.net/gh/mrdoob/three.js@r92/examples/js/loaders/GLTFLoader.js'></script>
+<!-- <script src='TextureLoader.js'></script> -->
+
+<!-- This is a simple to use extension for three.js that activates all the rotating, dragging and zooming controls we need for both mouse and touch, there isn't a clear CDN for this that I can find -->
+<script src='BetterOrbitControls.js'></script>
+<script src="script.js"></script>
+<script>
+var container;
+var scene;
+var renderer;
+var camera;
+
+var model;
+
+function init()
+{
+container = document.getElementById('scene');
+
+scene= new THREE.Scene();
+const fov=60;
+const aspect =container.clientWidth/container.clientHeight;
+const near =0.1;
+const far =500;
+
+// renderer.shadowMap.enabled = true;
+//         renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+        
+camera = new THREE.PerspectiveCamera(fov,aspect,near,far);
+camera.position.set(0,-15,0)
+// camera.rotation.x=Math.PI;
+
+
+
+renderer = new THREE.WebGLRenderer({antialias:true,alpha:true});
+renderer.setSize(container.clientWidth, container.clientHeight);
+renderer.setPixelRatio(window.devicePixelRatio);
+container.appendChild(renderer.domElement);
+
+
+// let ambient = new THREE.AmbientLight(0x404040,3);
+let ambient = new THREE.AmbientLight("#fff",0.1);
+scene.add(ambient)
+
+let direction = new THREE.DirectionalLight(0xffffff,1);
+direction.position.set(3,10,2);
+// document.addEventListener("mousemove",(e)=>{
+//     // document.position.set(e.clientX,e.clientY,2);
+//     console.log("X:", clientX)
+// })
+
+scene.add(direction)
+
+let point = new THREE.PointLight(0xffffff,2);
+point.position.set(-10,-10,-2)
+scene.add(point)
+
+const rectLight = new THREE.RectAreaLight("black", 1,  20, 20 );
+rectLight.position.set(-10,12,-2 );
+rectLight.lookAt( 3, 12, 0 );
+scene.add( rectLight );
+const light = new THREE.HemisphereLightProbe( "red", "blue", 2 );
+scene.add( light );
+
+const light2 = new THREE.HemisphereLightProbe( "#000000", "black", 0.8 );
+scene.add( light2 );
+
+var controls = new THREE.OrbitControls( camera, renderer.domElement );
+controls.maxPolarAngle = Math.PI / 2;
+controls.minPolarAngle = Math.PI /2;
+// controls.maxAzimuthAngle=Math.PI/3;
+// controls.minAzimuthAngle=-(Math.PI/3); 
+// controls.minAzimuthAngle=Math.PI*2;
+controls.enableDamping = true;
+controls.dampingFactor=2.2;
+controls.enablePan =false;
+controls.panSpeed=5;
+controls.maxZoom=1;
+controls.minZoom=1;
+controls.dampingFactor = 0.1;
+// controls.autoRotate = true; // Toggle this if you'd like the chair to automatically rotate
+
+
+let loader = new THREE.GLTFLoader();
+loader.load('scene.glb',function(gltf)
+{
+    scene.add(gltf.scene);
+    model=gltf.scene;
+    model.rotation.x=0;
+    model.scale.set(1.4,1.4,1.4)
+    // model.rotation.z=1;
+  animate()
+})
+var box3 = new THREE.Box3().setFromObject(model);
+    var center = box3.getCenter();
+    model.position.add(center.multiplyScalar(-1));
+// instantiate a loader
+// const loader1 = new THREE.TextureLoader().load('texture.png');
+
+// const material= new THREE.MeshBasicMaterial();
+// const mesh =new THREE.Mesh(loader1,material);
+// material.map = THREE.ImageUtils.loadTexture('texture.png');
+// scene.add(material)
+
+
+// load a resource
+
+function onWindowResize()
+{
+    camera.aspect=container.clientWidth/container.clientHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(container.clientWidth, container.clientHeight);
+}
+
+function animate()
+{
+    requestAnimationFrame(animate)
+    // model.rotation.y+=0.025;
+
+//    console.log(angle)
+// if(angle=-0.628)
+// {
+// console.log(angle);
+// model.rotation.y+=0.25;
+// }
+// else if (angle=(0.628))
+// {
+// console.log('nah')
+// model.rotation.y-=0.25;
+// } 
+model.rotation.x= 0.12;
+// camera.position.x = 15 * Math.sin(Date.now() / 650);
+// camera.position.z = 15 * Math.cos(Date.now() / 650);
+
+direction.position.x = 5 * Math.sin(Date.now() / 650);
+direction.position.z = 5 * Math.cos(Date.now() / 650);
+// model.rotation.y-=0.003;
+// var angle =controls.getAzimuthalAngle();
+// if(angle=controls.maxAzimuthAngle)
+// model.rotation.y+=0.003;
+// else if (angle=controls.minAzimuthAngle)
+// model.rotation.y-=0.003;
+controls.update();
+    renderer.render(scene,camera);
+}
+
+
+window.addEventListener('click',onWindowResize)
+}
+
+
+
+
+init();
+    </script>
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("column" );
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        
+        
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
+</body>
+</html>
